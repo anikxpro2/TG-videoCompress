@@ -20,7 +20,7 @@ try:
     API_HASH = config("API_HASH", "d927c13beaaf5110f25c505b7c071273")
     BOT_TOKEN = config("BOT_TOKEN", "6843660401:AAGONRD-BcFPlZo65O4SwxBij-xKxaKIb3Q")
     DEV = 2067727121
-    OWNER = config("OWNER", 2067727121)
+    OWNER = 2067727121
     ffmpegcode = ["-preset faster -c:v libx265 -s 854x480 -x265-params 'bframes=8:psy-rd=1:ref=3:aq-mode=3:aq-strength=0.8:deblock=1,1' -metadata 'title=Encoded By AnshuSharma (https://github.com/Anshusharma75/TG-videoCompress)' -pix_fmt yuv420p -crf 30 -c:a libopus -b:a 32k -c:s copy -map 0 -ac 2 -ab 32k -vbr 2 -level 3.1 -threads 1"]
     THUMB = config("THUMBNAIL" , "https://graph.org/file/6d2a3f41687f9a67b18d8.jpg")
 except Exception as e:
